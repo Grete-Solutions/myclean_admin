@@ -47,9 +47,9 @@ const PieChartBox: React.FC = () => {
                 className="w-full h-3"
                 style={{ backgroundColor: item.color }}
               ></div>
-              <span>{item.name}</span>
+              <span className="bg-gradient-to-l font-semibold from-blue-500 to-red-500 text-transparent bg-clip-text">{item.name}</span>
             </div>
-            <span>{item.value}</span>
+            <span className="font-bold text-gray-400">{item.value}</span>
           </div>
         ))}
       </div>

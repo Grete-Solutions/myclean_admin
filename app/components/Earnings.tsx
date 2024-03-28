@@ -52,6 +52,7 @@ const data:Dataitem[] = [
     pv: 4300,
     amt: 2100,
   },
+  
 ];
 
 const getPath = (x:string, y:string, width:number, height:number) => {

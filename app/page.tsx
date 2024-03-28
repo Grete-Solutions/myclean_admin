@@ -175,7 +175,7 @@ export default function Home() {
               <PieChartBox />
             </CardContent>
           </Card>
-          <Card className="lg:col-span-3">
+          <Card className="lg:col-span-3 w-fit">
             <CardHeader>
               <CardTitle>Earnings</CardTitle>
               <CardDescription>
