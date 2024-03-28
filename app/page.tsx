@@ -1,7 +1,8 @@
 
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
 import { Overview } from './components/overview'
-import { RecentSales } from './components/recent-sales'
+import { DataTableDemo } from './components/recent-cleaning'
+import PieChartBox from './components/Piechart'
 
 export default function Home() {
   return (
@@ -159,18 +160,18 @@ export default function Home() {
               </CardDescription>
             </CardHeader>
             <CardContent>
-              <RecentSales />
+              <DataTableDemo />
             </CardContent>
           </Card>
           <Card className="lg:col-span-3">
             <CardHeader>
-              <CardTitle>Recent Sales</CardTitle>
+              <CardTitle>Today's trips</CardTitle>
               <CardDescription>
-                You made 265 sales this month.
+                Check progress on completing,pending or cancelled requests
               </CardDescription>
             </CardHeader>
             <CardContent>
-              <RecentSales />
+              <PieChartBox />
             </CardContent>
           </Card>
           
