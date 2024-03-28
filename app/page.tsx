@@ -10,7 +10,7 @@ export default function Home() {
     <>
        <h2 className="text-3xl font-bold tracking-tight my-4">Dashboard</h2>
 
-      <div className="flex-1 space-y-4 overflow-x-scroll">
+      <div className="flex-1 space-y-4 overflow-x-auto">
         <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
           
           <Card>
@@ -175,7 +175,7 @@ export default function Home() {
               <PieChartBox />
             </CardContent>
           </Card>
-          <Card className="lg:col-span-3 w-fit">
+          <Card className="lg:col-span-4 ">
             <CardHeader>
               <CardTitle>Earnings</CardTitle>
               <CardDescription>
