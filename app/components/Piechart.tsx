@@ -19,7 +19,7 @@ const PieChartBox: React.FC = () => {
     <div className="flex items-center ">
 
       <div className="chart">
-        <ResponsiveContainer width='100%' height={300}>
+        <ResponsiveContainer width={250} height={250}>
           <PieChart className="pt-0" >
             <Tooltip
               contentStyle={{ background: "white", borderRadius: "5px" }}

@@ -3,13 +3,14 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/com
 import { Overview } from './components/overview'
 import { DataTableDemo } from './components/recent-cleaning'
 import PieChartBox from './components/Piechart'
+import Earnings from './components/Earnings'
 
 export default function Home() {
   return (
     <>
        <h2 className="text-3xl font-bold tracking-tight my-4">Dashboard</h2>
 
-      <div className="flex-1 space-y-4">
+      <div className="flex-1 space-y-4 overflow-x-scroll">
         <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
           
           <Card>
@@ -172,6 +173,17 @@ export default function Home() {
             </CardHeader>
             <CardContent>
               <PieChartBox />
+            </CardContent>
+          </Card>
+          <Card className="lg:col-span-3">
+            <CardHeader>
+              <CardTitle>Earnings</CardTitle>
+              <CardDescription>
+                Check earnings made
+              </CardDescription>
+            </CardHeader>
+            <CardContent>
+              <Earnings />
             </CardContent>
           </Card>
           
